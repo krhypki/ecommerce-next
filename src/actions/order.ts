@@ -1,9 +1,8 @@
 "use server";
 
-import { createOrder, findOrdersByEmail, removeOrder } from "@/db/order";
+import { findOrdersByEmail, removeOrder } from "@/db/order";
 import { getUserFromSession } from "@/lib/utils/get-user-from-session";
-import auth from "@/middleware";
-import { EcommerceUser, Order, Product } from "@prisma/client";
+import { EcommerceUser, Order } from "@prisma/client";
 import { isRedirectError } from "next/dist/client/components/redirect";
 import { redirect } from "next/navigation";
 
@@ -12,39 +11,28 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 type PaymentItem = {
   quantity: number;
   price: string;
-  productId: Product["id"];
 };
 
 export async function createCheckoutSession(
   products: PaymentItem[],
   email: EcommerceUser["email"]
 ) {
-  let userEmail;
-
   if (!email) {
     redirect("/error");
   }
 
-  const isAuth = await auth();
-
   try {
-    const orderId = await createOrder(products, email, !!isAuth);
-    let stripeItems: Array<Partial<PaymentItem>> = [...products];
-    stripeItems = stripeItems.map((product) => {
-      delete product.productId;
-      return product;
-    });
-
     const checkoutSession = await stripe.checkout.sessions.create({
-      customer_email: email || userEmail,
-      line_items: stripeItems,
+      customer_email: email,
+      line_items: products,
       mode: "payment",
-      success_url: `${process.env.BASE_URL}/checkout/payment?success=true&orderId=${orderId}`,
-      cancel_url: `${process.env.BASE_URL}/checkout/payment?success=false&orderId=${orderId}`,
+      success_url: `${process.env.BASE_URL}/checkout/payment?success=true`,
+      cancel_url: `${process.env.BASE_URL}/checkout/payment?success=false`,
     });
 
     redirect(checkoutSession.url);
   } catch (error) {
+    console.log(error);
     if (isRedirectError(error)) {
       throw error;
     }

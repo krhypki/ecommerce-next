@@ -48,7 +48,7 @@ model Product {
   stock        Int
   category     Category       @relation(fields: [categoryId], references: [id])
   categoryId   String
-  paymentId    String
+  paymentId    String         @unique()
   OrderProduct OrderProduct[]
 }
 
@@ -66,7 +66,7 @@ model Review {
 model OrderProduct {
   id        String  @id @default(cuid())
   quantity  Int
-  product   Product @relation(fields: [productId], references: [id])
+  product   Product @relation(fields: [productId], references: [paymentId])
   productId String
   Order     Order?  @relation(fields: [orderId], references: [id])
   orderId   String?

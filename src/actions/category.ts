@@ -33,7 +33,6 @@ export async function getCategoryProducts(
 
     return products;
   } catch (error) {
-    console.log(error);
     redirect("/error");
   }
 }

@@ -10,7 +10,7 @@ export async function createOrder(
     items.map(async (item) => {
       return await prisma.product.update({
         where: {
-          id: item.productId,
+          paymentId: item.productId,
         },
         data: {
           stock: { decrement: item.quantity },
@@ -35,7 +35,7 @@ export async function createOrder(
             quantity: item.quantity,
             product: {
               connect: {
-                id: item.productId,
+                paymentId: item.productId,
               },
             },
           })),

@@ -1,4 +1,3 @@
-import { removeTempOrder } from "@/actions/order";
 import PaymentStatus from "@/components/PaymentStatus";
 import SectionBlock from "@/components/ui/SectionBlock";
 import { Button } from "@/components/ui/button";
@@ -20,11 +19,6 @@ export default function PaymentPage({ searchParams }: PaymentPageProps) {
   }
 
   const paymentSuccess = searchParams.success === "true";
-
-  if (!paymentSuccess) {
-    removeTempOrder(String(searchParams.orderId));
-  }
-
   return (
     <main>
       <SectionBlock>

@@ -15,7 +15,6 @@ export default function CheckoutForm({ user }: CheckoutFormProps) {
   const products = useCartStore((state) =>
     state.products.map((product) => ({
       price: product.paymentId,
-      productId: product.id,
       quantity: product.quantity,
     }))
   );
