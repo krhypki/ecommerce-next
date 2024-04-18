@@ -1,18 +1,17 @@
 import { Checkbox } from "@/components/ui/checkbox";
 import { useCategoryProductsContext } from "@/hooks/contexts";
-import { FormEvent, useEffect, useRef, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 
 export default function ProductFilterBrands() {
   const { searchParams, updateUrlParams, brands } =
     useCategoryProductsContext();
-  const formRef = useRef<HTMLFormElement | null>(null);
   const [checkedBrands, setCheckedBrands] = useState(
     searchParams.get("brand")?.split(",") || []
   );
 
   useEffect(() => {
     if (!searchParams.get("brand")) {
-      formRef.current?.reset();
+      setCheckedBrands([]);
     }
   }, [searchParams]);
 
@@ -22,10 +21,12 @@ export default function ProductFilterBrands() {
     const brandList = Array.from(formData.entries())
       .map(([key]) => key)
       .join(",");
+
     updateUrlParams("brand", brandList);
   };
 
   const handleCheckedChange = (brand: string) => {
+    console.log(brand);
     setCheckedBrands((prev) => {
       if (prev.includes(brand)) {
         return prev.filter((checkedBrand) => checkedBrand !== brand);
@@ -35,17 +36,21 @@ export default function ProductFilterBrands() {
   };
 
   return (
-    <form ref={formRef} onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <ul>
         {brands.map((brand) => (
           <li key={brand} className="mb-2">
             <Checkbox
               type="submit"
               name={brand}
+              id={`check-${brand}`}
               onCheckedChange={() => handleCheckedChange(brand)}
               checked={checkedBrands.includes(brand)}
             />
-            <label className="ml-3 capitalize" htmlFor={`check-${brand}`}>
+            <label
+              className="ml-3 capitalize cursor-pointer"
+              htmlFor={`check-${brand}`}
+            >
               {brand}
             </label>
           </li>
