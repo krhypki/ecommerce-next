@@ -30,7 +30,11 @@ export default function ProductFilterPrice() {
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { id, value } = e.target;
-    setInputValues((prev) => ({ ...prev, [id]: value }));
+
+    if (+value > 0 && !isNaN(+value)) {
+      setInputValues((prev) => ({ ...prev, [id]: value }));
+    }
+
     updateUrlParams(id as ProductFilterOption, value);
   };
 
@@ -41,6 +45,7 @@ export default function ProductFilterPrice() {
           <Input
             id={id}
             type="number"
+            onWheel={(event) => event.currentTarget.blur()}
             placeholder={placeholder}
             value={inputValues[id]}
             onChange={handleInputChange}
