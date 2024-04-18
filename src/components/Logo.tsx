@@ -1,5 +1,5 @@
-import { FaShoppingBag } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
 
 export default function Logo() {
-  return <FaShoppingBag className="w-8 h-8" />;
+  return <FaHome className="w-8 h-8" />;
 }
