@@ -51,8 +51,9 @@ const config = {
       }
 
       if (
-        (isLoggedIn && request.nextUrl.pathname === "/login") ||
-        request.nextUrl.pathname === "/signup"
+        isLoggedIn &&
+        (request.nextUrl.pathname === "/login" ||
+          request.nextUrl.pathname === "/signup")
       ) {
         return Response.redirect(new URL("/", request.nextUrl));
       }
