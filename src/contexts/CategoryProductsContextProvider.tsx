@@ -128,8 +128,18 @@ export default function CategoryProductsContextProvider({
       const paramsObj = Object.fromEntries(newParams.entries());
       const categories = await getCategoryProducts(category, paramsObj);
       setProducts(categories);
-      wrapperRef.current?.scrollIntoView();
+      handleScrollAfterFiltering();
     });
+  };
+
+  const handleScrollAfterFiltering = () => {
+    if (!wrapperRef.current) {
+      return;
+    }
+
+    if (window.scrollY > wrapperRef.current?.offsetTop) {
+      wrapperRef.current?.scrollIntoView();
+    }
   };
 
   const clearFilters = () => {

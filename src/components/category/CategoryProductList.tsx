@@ -12,7 +12,7 @@ export default function CategoryProductList() {
     useCategoryProductsContext();
 
   return (
-    <div className="relative">
+    <div className="relative min-h-[2000px]">
       <div className="flex max-md:flex-col items-center gap-x-10 gap-y-4 mb-10 md:ml-20">
         <Heading tag="h4" className="mb-0">
           sort by
