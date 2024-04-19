@@ -1,7 +1,7 @@
 import CartItemList from "@/components/cart/CartItemList";
 import CheckoutBtn from "@/components/cart/CheckoutBtn";
+import Heading from "@/components/ui/Heading";
 import SectionBlock from "@/components/ui/SectionBlock";
-import Heading from "@/components/ui/heading";
 import auth from "@/middleware";
 import { Metadata } from "next";
 

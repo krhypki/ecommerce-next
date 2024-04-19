@@ -1,7 +1,7 @@
 import OrderList from "@/components/account/OrderList";
 import OrderListSkeleton from "@/components/skeleton/OrderListSkeleton";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import Heading from "@/components/ui/heading";
+import { Card, CardContent, CardHeader } from "@/components/ui/Card";
+import Heading from "@/components/ui/Heading";
 import { Metadata } from "next";
 import { Suspense } from "react";
 

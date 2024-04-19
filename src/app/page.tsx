@@ -1,8 +1,8 @@
 import { getDiscountedProduts, getTop10Products } from "@/actions/product";
 import AllCategoriesList from "@/components/category/AllCategoriesList";
 import ProductCarousel from "@/components/product/ProductCarousel";
+import Heading from "@/components/ui/Heading";
 import SectionBlock from "@/components/ui/SectionBlock";
-import Heading from "@/components/ui/heading";
 
 export default async function Home() {
   const topRatedProducts = await getTop10Products();

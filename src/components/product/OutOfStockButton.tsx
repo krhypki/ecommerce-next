@@ -1,5 +1,5 @@
 import { MouseEvent } from "react";
-import { Button } from "../ui/button";
+import { Button } from "../ui/Button";
 
 export default function OutOfStockButton() {
   const handleClick = (event: MouseEvent<HTMLButtonElement>) => {

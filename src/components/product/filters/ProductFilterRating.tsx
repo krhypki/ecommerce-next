@@ -1,4 +1,4 @@
-import { Slider } from "@/components/ui/slider";
+import { Slider } from "@/components/ui/Slider";
 import { useCategoryProductsContext } from "@/hooks/contexts";
 import { MAX_PRODUCT_RATING, MIN_PRODUCT_RATING } from "@/lib/constants";
 import { useEffect, useMemo, useState } from "react";

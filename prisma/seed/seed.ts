@@ -2,7 +2,7 @@ import { PrismaClient } from "@prisma/client";
 import createAccesories from "./accessories.seed";
 import createLaptops from "./laptop.seed";
 import createSmartphones from "./smartphone.seed";
-import createTvs from "./tv";
+import createTvs from "./tv.seed";
 import createUsers from "./users.seed";
 
 const prisma = new PrismaClient();

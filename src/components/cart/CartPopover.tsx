@@ -8,8 +8,8 @@ import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import CartItem from "../cart/CartItem";
-import { Button } from "../ui/button";
-import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
+import { Button } from "../ui/Button";
+import { Popover, PopoverContent, PopoverTrigger } from "../ui/Popover";
 
 export default function CartPopover() {
   const products = useCartStore((state) => state.products);

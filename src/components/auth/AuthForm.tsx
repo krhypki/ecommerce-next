@@ -4,8 +4,8 @@ import { login, signup } from "@/actions/user";
 import { AuthActionType } from "@/lib/types";
 import { toast } from "sonner";
 import FormSubmitButton from "../FormSubmitButton";
-import { Input } from "../ui/input";
-import { Label } from "../ui/label";
+import { Input } from "../ui/Input";
+import { Label } from "../ui/Label";
 import AuthFormQuestion from "./AuthFormQuestion";
 
 type AuthFormProps = {

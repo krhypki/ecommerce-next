@@ -1,6 +1,6 @@
 import { Dialog, DialogContent, DialogTrigger } from "@radix-ui/react-dialog";
 import ProductFilters from "../product/filters/ProductFilters";
-import { Button } from "../ui/button";
+import { Button } from "../ui/Button";
 
 export default function ProductFiltersMobile() {
   return (

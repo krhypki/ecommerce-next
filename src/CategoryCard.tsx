@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Card } from "./components/ui/card";
-import Heading from "./components/ui/heading";
+import { Card } from "./components/ui/Card";
+import Heading from "./components/ui/Heading";
 
 type CategoryCardProps = {
   name: string;

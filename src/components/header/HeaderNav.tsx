@@ -3,7 +3,7 @@
 import { useMediaQueryContext } from "@/hooks/contexts";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import Collapse from "../ui/collapse";
+import Collapse from "../ui/Collapse";
 import { AppNavHamburger } from "./NavHamburger";
 import { AppNavLink } from "./NavLinks";
 

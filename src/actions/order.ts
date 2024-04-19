@@ -32,7 +32,6 @@ export async function createCheckoutSession(
 
     redirect(checkoutSession.url);
   } catch (error) {
-    console.log(error);
     if (isRedirectError(error)) {
       throw error;
     }

@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 import { useCategoryProductsContext } from "@/hooks/contexts";
 
 export default function ClearFiltersButton() {

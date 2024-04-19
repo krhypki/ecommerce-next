@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import Heading from "@/components/ui/heading";
+import { Button } from "@/components/ui/Button";
+import Heading from "@/components/ui/Heading";
 import { Metadata } from "next";
 import Link from "next/link";
 

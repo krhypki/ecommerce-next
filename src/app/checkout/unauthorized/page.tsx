@@ -1,6 +1,6 @@
 import AuthForm from "@/components/auth/AuthForm";
+import { Button } from "@/components/ui/Button";
 import SectionBlock from "@/components/ui/SectionBlock";
-import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
 import Link from "next/link";
 

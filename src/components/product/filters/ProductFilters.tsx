@@ -1,6 +1,6 @@
 "use client";
 
-import Heading from "../../ui/heading";
+import Heading from "../../ui/Heading";
 import ProductFilterBrands from "./ProductFilterBrands";
 import ProductFilterPrice from "./ProductFilterPrice";
 

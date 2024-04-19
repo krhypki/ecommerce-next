@@ -1,6 +1,6 @@
 import { SortBy, SortDirection } from "@/lib/types";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-import { Button } from "../ui/button";
+import { Button } from "../ui/Button";
 
 type ProductSortButtonProps = {
   sortBy: SortBy;

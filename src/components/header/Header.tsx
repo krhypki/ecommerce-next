@@ -1,4 +1,4 @@
-import Container from "@/components/ui/container";
+import Container from "@/components/ui/Container";
 import Link from "next/link";
 import Logo from "../Logo";
 import CartPopover from "../cart/CartPopover";

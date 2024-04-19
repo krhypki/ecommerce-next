@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Button } from "../ui/button";
-import Heading from "../ui/heading";
+import { Button } from "../ui/Button";
+import Heading from "../ui/Heading";
 
 export default function CartEmptyState() {
   return (

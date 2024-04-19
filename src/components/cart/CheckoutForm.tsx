@@ -5,7 +5,7 @@ import { OrderInfoSchema } from "@/lib/types";
 import { useCartStore } from "@/stores/cart";
 import { EcommerceUser } from "@prisma/client";
 import OrderInformationForm from "../OrderInformationForm";
-import Heading from "../ui/heading";
+import Heading from "../ui/Heading";
 
 type CheckoutFormProps = {
   user: EcommerceUser | null;

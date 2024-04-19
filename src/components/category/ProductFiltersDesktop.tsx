@@ -1,6 +1,6 @@
 import ProductFilters from "../product/filters/ProductFilters";
-import { Card, CardContent, CardHeader } from "../ui/card";
-import Heading from "../ui/heading";
+import { Card, CardContent, CardHeader } from "../ui/Card";
+import Heading from "../ui/Heading";
 
 export default function ProductFiltersDesktop() {
   return (

@@ -6,11 +6,11 @@ import { Product } from "@prisma/client";
 import Link from "next/link";
 import { toast } from "sonner";
 import FormSubmitButton from "../FormSubmitButton";
+import { Button } from "../ui/Button";
+import Heading from "../ui/Heading";
+import { Label } from "../ui/Label";
 import SectionBlock from "../ui/SectionBlock";
-import { Button } from "../ui/button";
-import Heading from "../ui/heading";
-import { Label } from "../ui/label";
-import { Textarea } from "../ui/textarea";
+import { Textarea } from "../ui/Textarea";
 import AddReviewRating from "./AddReviewRating";
 import ProductReview from "./ProductReview";
 

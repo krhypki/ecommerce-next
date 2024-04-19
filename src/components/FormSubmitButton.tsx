@@ -1,8 +1,8 @@
 "use client";
 
 import { useFormStatus } from "react-dom";
+import { Button, ButtonProps } from "./ui/Button";
 import Spinner from "./ui/Spinner";
-import { Button, ButtonProps } from "./ui/button";
 
 type FormSubmitButtonProps = ButtonProps & {
   children: React.ReactNode;

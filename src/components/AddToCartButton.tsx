@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils/cn";
 import { MouseEvent } from "react";
 import { FaShoppingCart } from "react-icons/fa";
-import { Button, ButtonProps } from "./ui/button";
+import { Button, ButtonProps } from "./ui/Button";
 
 type AddToCartButtonProps = ButtonProps & {
   className?: string;

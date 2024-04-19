@@ -1,5 +1,5 @@
-import { Checkbox } from "@/components/ui/checkbox";
-import { Label } from "@/components/ui/label";
+import { Checkbox } from "@/components/ui/Checkbox";
+import { Label } from "@/components/ui/Label";
 import { useCategoryProductsContext } from "@/hooks/contexts";
 import { useEffect, useState } from "react";
 
@@ -23,7 +23,7 @@ export default function ProductFilterDiscount() {
         checked={checked}
         onCheckedChange={handleCheckedChange}
       />
-      <Label htmlFor="discounted" className="text-lg mb-0">
+      <Label htmlFor="discounted" className="text-lg cursor-pointer mb-0">
         Discounted
       </Label>
     </div>

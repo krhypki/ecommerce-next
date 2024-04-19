@@ -5,7 +5,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "../ui/carousel";
+} from "../ui/Carousel";
 import ProductCard from "./ProductCard";
 
 type ProductCarouselProps = {

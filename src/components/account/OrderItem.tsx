@@ -6,8 +6,8 @@ import { formatDate } from "@/lib/utils/format-date";
 import Link from "next/link";
 import { useState } from "react";
 import CartItem from "../cart/CartItem";
-import { Button } from "../ui/button";
-import Collapse from "../ui/collapse";
+import { Button } from "../ui/Button";
+import Collapse from "../ui/Collapse";
 
 type OrderItemProps = {
   order: OrderWithRelations;

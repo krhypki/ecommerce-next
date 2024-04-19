@@ -1,9 +1,8 @@
 import DarkModeSwitch from "@/components/DarkModeSwitch";
 import Footer from "@/components/Footer";
 import Header from "@/components/header/Header";
-import Container from "@/components/ui/container";
-import { Toaster } from "@/components/ui/sonner";
-import prisma from "@/db/prisma";
+import Container from "@/components/ui/Container";
+import { Toaster } from "@/components/ui/Sonner";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Suspense } from "react";
@@ -34,12 +33,6 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const product = await prisma.product.findUnique({
-    where: {
-      paymentId: "price_1P4g0NEPfZyMOv01l8DOBqt4",
-    },
-  });
-
   return (
     <html lang="en" suppressHydrationWarning>
       <body

@@ -1,6 +1,6 @@
 import PaymentStatus from "@/components/PaymentStatus";
+import { Button } from "@/components/ui/Button";
 import SectionBlock from "@/components/ui/SectionBlock";
-import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";

@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils/cn";
 import auth from "@/middleware";
 import Link from "next/link";
 import LogoutButton from "../LogoutButton";
-import { Button } from "../ui/button";
+import { Button } from "../ui/Button";
 
 type HeaderControlsProps = {
   className?: string;

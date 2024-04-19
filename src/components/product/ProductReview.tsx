@@ -1,7 +1,7 @@
 import { ReviewWithRelations } from "@/lib/types";
 import { formatDate } from "@/lib/utils/format-date";
 import Avatar from "../ui/Avatar";
-import { Card, CardContent, CardHeader } from "../ui/card";
+import { Card, CardContent, CardHeader } from "../ui/Card";
 import ProductRating from "./ProductRating";
 
 type ProductReviewProps = {

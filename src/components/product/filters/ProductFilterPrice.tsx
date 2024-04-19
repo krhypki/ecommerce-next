@@ -1,4 +1,4 @@
-import { Input } from "@/components/ui/input";
+import { Input } from "@/components/ui/Input";
 import { useCategoryProductsContext } from "@/hooks/contexts";
 import { ProductFilterOption } from "@/lib/types";
 import { Label } from "@radix-ui/react-label";

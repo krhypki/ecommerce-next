@@ -2,8 +2,8 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { Label } from "./ui/label";
-import { Switch } from "./ui/switch";
+import { Label } from "./ui/Label";
+import { Switch } from "./ui/Switch";
 
 export default function DarkModeSwitch() {
   const { theme, setTheme } = useTheme();

@@ -1,4 +1,4 @@
-import { Checkbox } from "@/components/ui/checkbox";
+import { Checkbox } from "@/components/ui/Checkbox";
 import { useCategoryProductsContext } from "@/hooks/contexts";
 import { FormEvent, useEffect, useState } from "react";
 

@@ -194,3 +194,13 @@ export async function updateProductRating(id: Product["id"]) {
     },
   });
 }
+
+export async function findManyByIds(productIds: Product["id"][]) {
+  return await prisma.product.findMany({
+    where: {
+      id: {
+        in: productIds,
+      },
+    },
+  });
+}

@@ -1,6 +1,6 @@
 import { getCategoryData, getCategoryProducts } from "@/actions/category";
 import CategoryProductsSection from "@/components/category/CategoryProductsSection";
-import Heading from "@/components/ui/heading";
+import Heading from "@/components/ui/Heading";
 import CategoryProductsContextProvider from "@/contexts/CategoryProductsContextProvider";
 import { Metadata } from "next";
 import Image from "next/image";

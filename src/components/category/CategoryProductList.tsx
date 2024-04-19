@@ -3,8 +3,8 @@
 import { useCategoryProductsContext } from "@/hooks/contexts";
 import ProductList from "../product/ProductList";
 import ProductSortControls from "../product/ProductSortControls";
+import Heading from "../ui/Heading";
 import LoadingOverlay from "../ui/LoadingOverlay";
-import Heading from "../ui/heading";
 import CategoryProductsEmpty from "./CategoryProductsEmpty";
 
 export default function CategoryProductList() {

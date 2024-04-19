@@ -1,9 +1,9 @@
 "use server";
 
-import prisma from "@/db/prisma";
 import {
   createReview,
   findDiscounted,
+  findManyByIds,
   findOneById,
   findTopRated,
   removeReview,
@@ -98,13 +98,7 @@ export async function getInitialCartProducts(
   localStorageProducts: { id: Product["id"]; quantity: number }[]
 ) {
   const productIds = localStorageProducts.map((product) => product.id);
-  const products = await prisma.product.findMany({
-    where: {
-      id: {
-        in: productIds,
-      },
-    },
-  });
+  const products = await findManyByIds(productIds);
 
   return products.map((product, index) => ({
     ...createCartProduct(product),
