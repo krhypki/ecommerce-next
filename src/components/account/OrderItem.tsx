@@ -1,8 +1,8 @@
 "use client";
 
 import { OrderWithRelations } from "@/lib/types";
-import { formatCurrency } from "@/lib/utils/format-currency";
-import { formatDate } from "@/lib/utils/format-date";
+import { formatCurrency } from "@/lib/utils/formatCurrency";
+import { formatDate } from "@/lib/utils/formatDate";
 import Link from "next/link";
 import { useState } from "react";
 import CartItem from "../cart/CartItem";

@@ -1,5 +1,5 @@
 import { findOneByEmail } from "@/db/user";
-import { getUserFromSession } from "@/lib/utils/get-user-from-session";
+import { getUserFromSession } from "@/lib/utils/getUserFromSession";
 import { notFound } from "next/navigation";
 import AccountInfoForm from "./AccountInfoForm";
 

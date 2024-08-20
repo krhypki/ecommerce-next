@@ -3,9 +3,9 @@
 import { createUser, findOneByEmail, updateUser } from "@/db/user";
 import { signIn, signOut } from "@/lib/auth";
 import { INVALID_FORM_DATA_RESPONSE } from "@/lib/constants";
-import { getUserFromSession } from "@/lib/utils/get-user-from-session";
-import { userOrderInfoSchema } from "@/lib/validators/order-schema";
-import { userAuthSchema } from "@/lib/validators/user-schema";
+import { getUserFromSession } from "@/lib/utils/getUserFromSession";
+import { userOrderInfoSchema } from "@/lib/validators/orderSchema";
+import { userAuthSchema } from "@/lib/validators/userSchema";
 import { EcommerceUser, Prisma } from "@prisma/client";
 import bcrypt from "bcryptjs";
 import { revalidatePath } from "next/cache";

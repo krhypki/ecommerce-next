@@ -1,6 +1,6 @@
 import { Product } from ".prisma/client";
 import { CartProduct } from "@/lib/types";
-import { formatCurrency } from "@/lib/utils/format-currency";
+import { formatCurrency } from "@/lib/utils/formatCurrency";
 
 type ProductPriceProps = {
   price: Product["price"];

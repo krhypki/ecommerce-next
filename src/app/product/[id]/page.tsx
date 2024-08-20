@@ -4,7 +4,7 @@ import ProductRating from "@/components/product/ProductRating";
 import ProductReviewSection from "@/components/product/ProductReviewSection";
 import Heading from "@/components/ui/Heading";
 import SectionBlock from "@/components/ui/SectionBlock";
-import { createCartProduct } from "@/lib/utils/get-card-product";
+import { createCartProduct } from "@/lib/utils/getCardProduct";
 import auth from "@/middleware";
 import { Metadata } from "next";
 import Image from "next/image";

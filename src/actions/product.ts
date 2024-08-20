@@ -9,9 +9,9 @@ import {
   removeReview,
 } from "@/db/product";
 import { INVALID_FORM_DATA_RESPONSE } from "@/lib/constants";
-import { createCartProduct } from "@/lib/utils/get-card-product";
-import { getUserFromSession } from "@/lib/utils/get-user-from-session";
-import { productReviewSchema } from "@/lib/validators/product-schema";
+import { createCartProduct } from "@/lib/utils/getCardProduct";
+import { getUserFromSession } from "@/lib/utils/getUserFromSession";
+import { productReviewSchema } from "@/lib/validators/productSchema";
 import { Product, Review } from "@prisma/client";
 import { revalidatePath } from "next/cache";
 import { notFound, redirect } from "next/navigation";

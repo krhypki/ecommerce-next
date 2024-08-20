@@ -4,7 +4,7 @@ import { OrderInfoSchema } from "@/lib/types";
 import {
   checkoutOrderSchema,
   userOrderInfoSchema,
-} from "@/lib/validators/order-schema";
+} from "@/lib/validators/orderSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { EcommerceUser } from "@prisma/client";
 import { useMask } from "@react-input/mask";

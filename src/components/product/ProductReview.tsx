@@ -1,5 +1,5 @@
 import { ReviewWithRelations } from "@/lib/types";
-import { formatDate } from "@/lib/utils/format-date";
+import { formatDate } from "@/lib/utils/formatDate";
 import Avatar from "../ui/Avatar";
 import { Card, CardContent, CardHeader } from "../ui/Card";
 import ProductRating from "./ProductRating";

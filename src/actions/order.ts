@@ -1,7 +1,7 @@
 "use server";
 
 import { findOrdersByEmail, removeOrder } from "@/db/order";
-import { getUserFromSession } from "@/lib/utils/get-user-from-session";
+import { getUserFromSession } from "@/lib/utils/getUserFromSession";
 import { EcommerceUser, Order } from "@prisma/client";
 import { isRedirectError } from "next/dist/client/components/redirect";
 import { redirect } from "next/navigation";

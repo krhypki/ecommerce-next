@@ -1,6 +1,6 @@
 "use client";
 
-import { formatCurrency } from "@/lib/utils/format-currency";
+import { formatCurrency } from "@/lib/utils/formatCurrency";
 import { useCartStore } from "@/stores/cart";
 import CartEmptyState from "./CartEmptyState";
 import CartItemDetails from "./CartItemDetails";

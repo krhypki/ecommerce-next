@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils/cn";
-import { createCartProduct } from "@/lib/utils/get-card-product";
+import { createCartProduct } from "@/lib/utils/getCardProduct";
 import { useCartStore } from "@/stores/cart";
 import { Product } from "@prisma/client";
 import Link from "next/link";

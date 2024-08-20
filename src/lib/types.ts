@@ -3,7 +3,7 @@ import { z } from "zod";
 import {
   checkoutOrderSchema,
   userOrderInfoSchema,
-} from "./validators/order-schema";
+} from "./validators/orderSchema";
 
 export type AuthActionType = "login" | "signup";
 export type SortBy = "price" | "rating";
